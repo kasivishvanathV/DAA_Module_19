@@ -1,27 +1,31 @@
-# EX 1A Reverse a String
-## DATE:
-## AIM:
+EX 1A Reverse a String
+DATE:18.02.2025
+# AIM:
 To write a program to create a recursive function to reverse a string.
 
-## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
-
-## Program:
-```
-/*
+# Algorithm
+1. Define a function reverse(reverseme)
+2. If the length of reverseme is 0, then return reverseme (base case)
+  • Else, return reverse(reverseme[1:]) + reverseme[0] (recursive case)
+3. Read a string input from the user and store it in the variable reverseme
+4. Call the function reverse(reverseme) and print the result
+5. Stop  
+# Program:
 Program to implement Reverse a String
-Developed by: 
-Register Number:  
-*/
+Developed by:V.Kasivishvanath
+Register Number:  212222040073
 ```
+def reverse(reverseme):
+    if len(reverseme)==0:
+        return reverseme
+    else:
+        return reverse(reverseme[1:])+reverseme[0]
+reverseme=input()
+print(reverse(reverseme))
+```
+# Output:
 
-## Output:
 
-
-
-## Result:
+![438587045-b5812454-1f4d-47fa-a5d1-80c8601f4c98](https://github.com/user-attachments/assets/c9304fc9-93eb-411a-b2c2-6d49577a6512)
+# Result:
 The program successfully reverses the input string using recursion. When the user provides an input string, the output displays the reversed version of the string
